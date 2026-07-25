@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #1A1A1A;
+  --color-paper: #F5F5F2;
+  --color-sand: #D8C3A5;
+  --color-blood: #8B0000;
+
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-ink);
+  color: var(--color-paper);
+  font-family: var(--font-body), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--color-blood);
+  color: var(--color-paper);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+.eyebrow {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-sand);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6em;
+}
+.eyebrow::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: var(--color-blood);
+  display: inline-block;
+  flex: none;
+}
+.eyebrow-light {
+  color: var(--color-blood);
+}
+.eyebrow-light::before {
+  background: var(--color-ink);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.7s cubic-bezier(0.16, 0.84, 0.44, 1),
+    transform 0.7s cubic-bezier(0.16, 0.84, 0.44, 1);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
