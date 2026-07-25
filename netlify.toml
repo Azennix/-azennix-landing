@@ -1,4 +1,3 @@
 [build]
-base = "azennix-web"
-publish = "azennix-web/out"
 command = "npm run build"
+publish = "out"
