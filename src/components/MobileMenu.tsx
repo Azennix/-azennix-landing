@@ -120,8 +120,7 @@ px-6
 pt-6
 pb-8
 
-bg-[#0F0F0F]/55
-supports-[backdrop-filter]:bg-[#0F0F0F]/45
+
 backdrop-blur-[28px]
 
 border-l

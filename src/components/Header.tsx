@@ -18,7 +18,7 @@ export default function Header() {
     top-0
     z-50
 
-    bg-ink/70 
+    bg-ink/85 
    
 
     border-b
