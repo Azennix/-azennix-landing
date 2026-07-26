@@ -12,7 +12,19 @@ const links = [
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 bg-ink/85 backdrop-blur-md border-b border-paper/10">
+    <header
+  className="
+    sticky
+    top-0
+    z-50
+
+    bg-ink/70 
+   
+
+    border-b
+    border-white/10
+  "
+>
       <nav className="max-w-[1240px] mx-auto flex items-center justify-between px-5 sm:px-8 lg:px-16 py-4">
         <Link
           href="/"

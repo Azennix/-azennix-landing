@@ -90,22 +90,65 @@ export default function MobileMenu() {
       </button>
 
       {/* Full-screen overlay panel */}
-      <div
-        className={`fixed inset-0 z-40 md:hidden ${
-          open ? "visible pointer-events-auto" : "invisible pointer-events-none"
-        }`}
-        style={{
-          backgroundColor: "rgba(26,26,26,0.88)",
-          backdropFilter: "blur(28px)",
-          WebkitBackdropFilter: "blur(28px)",
-        }}
-      >
-        <div className="h-full flex flex-col px-6 pt-24 pb-10">
-          <div className="mb-10">
-            <BrandMark className="w-10 h-10" />
+   <div
+  className={`fixed inset-0 z-[999] transition-all duration-500 ${
+    open
+      ? "opacity-100 pointer-events-auto"
+      : "opacity-0 pointer-events-none"
+  }`}
+>
+  {/* Blur Layer */}
+  <div
+    className="absolute inset-0 bg-black/15 backdrop-blur-2xl"
+    onClick={() => setOpen(false)}
+  />
+
+  {/* Menu Panel goes here */}
+  
+   <div
+ className={`
+absolute
+top-0
+right-0
+h-full
+w-[82%]
+
+flex
+flex-col
+
+px-6
+pt-6
+pb-8
+
+bg-[#0F0F0F]/55
+supports-[backdrop-filter]:bg-[#0F0F0F]/45
+backdrop-blur-[28px]
+
+border-l
+border-white/10
+
+shadow-[0_8px_40px_rgba(0,0,0,0.45)]
+
+transition-transform
+duration-500
+
+${open ? "translate-x-0" : "translate-x-full"}
+`}
+>
+  
+
+
+  <div className="flex items-center pl-6 mb-10 ">
+            <BrandMark
+  className="
+    w-10
+    h-10
+    translate-y-5
+"
+/>
           </div>
 
-          <nav className="flex-1 flex flex-col justify-center gap-1">
+            <nav className="flex-1 flex flex-col justify-center gap-2">
             {links.map((l, i) => (
               <Link
                 key={l.href}
