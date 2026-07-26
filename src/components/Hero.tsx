@@ -1,6 +1,6 @@
 import Link from "next/link";
 import HelixCanvas from "./HelixCanvas";
-
+import PixelWordmark from "./PixelWordmark";
 export default function Hero() {
   return (
     <section
@@ -12,7 +12,8 @@ export default function Hero() {
       </div>
 
       <div className="relative z-10 max-w-[880px] mx-auto px-5 sm:px-8 lg:px-16 w-full">
-        <span className="eyebrow">Azennix / Est. Kakinada</span>
+          <PixelWordmark className="h-8 sm:h-9 w-auto mb-8" />
+        <span className="eyebrow">Azennix / Est . India </span>
 
         <h1 className="font-display font-semibold leading-[1.04] tracking-tight text-[clamp(2.6rem,7vw,5.4rem)] mt-6 mb-6">
           AI systems for

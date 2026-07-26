@@ -91,8 +91,8 @@ export default function MobileMenu() {
 
       {/* Full-screen overlay panel */}
       <div
-        className={`fixed inset-0 z-40 bg-ink transition-opacity duration-300 md:hidden ${
-          open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+        className={`fixed inset-0 z-40 bg-ink/85 backdrop-blur-2xl md:hidden ${
+          open ? "visible pointer-events-auto" : "invisible pointer-events-none"
         }`}
       >
         <div className="h-full flex flex-col px-6 pt-24 pb-10">
