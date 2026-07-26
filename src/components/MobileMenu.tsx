@@ -91,9 +91,14 @@ export default function MobileMenu() {
 
       {/* Full-screen overlay panel */}
       <div
-        className={`fixed inset-0 z-40 bg-ink/85 backdrop-blur-2xl md:hidden ${
+        className={`fixed inset-0 z-40 md:hidden ${
           open ? "visible pointer-events-auto" : "invisible pointer-events-none"
         }`}
+        style={{
+          backgroundColor: "rgba(26,26,26,0.88)",
+          backdropFilter: "blur(28px)",
+          WebkitBackdropFilter: "blur(28px)",
+        }}
       >
         <div className="h-full flex flex-col px-6 pt-24 pb-10">
           <div className="mb-10">
