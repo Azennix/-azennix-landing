@@ -32,7 +32,7 @@ export default function IRABrain() {
           <h2 className="font-display font-semibold text-[clamp(1.9rem,4vw,3rem)] mt-5 mb-5">
             IRABrain — the memory and
             <br />
-            achievement OS.
+            Gen-Z OS.
           </h2>
           <p className="text-paper/65 leading-relaxed text-[1.05rem]">
             Most productivity tools track tasks. IRABrain tracks the founder:

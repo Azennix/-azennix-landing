@@ -9,12 +9,12 @@ import BrandMark from "@/components/BrandMark";
 export const metadata: Metadata = {
   title: "Company — Azennix",
   description:
-    "Azennix is a company building AI systems for human growth, founded by Aneesh in Kakinada, India.",
+    "Azennix is a company building AI systems for Future Founders, founded by Aneesh Challa  EST : India.",
 };
 
 const stats = [
-  { k: "Founded by", v: "Aneesh" },
-  { k: "Base", v: "Kakinada, India" },
+  { k: "Founded by", v: "Aneesh Challa" },
+  { k: "Base", v:  "India" },
   { k: "Flagship product", v: "IRABrain" },
   { k: "Focus", v: "Memory-native AI" },
   { k: "Built for", v: "Gen-Z founders" },

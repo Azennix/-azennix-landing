@@ -18,7 +18,7 @@ export default function Hero() {
         <h1 className="font-display font-semibold leading-[1.04] tracking-tight text-[clamp(2.6rem,7vw,5.4rem)] mt-6 mb-6">
           AI systems for
           <br />
-          <span className="text-sand">human growth.</span>
+          <span className="text-sand">Future Founders.</span>
         </h1>
 
         <p className="text-paper/65 max-w-[620px] leading-relaxed text-[clamp(1.02rem,1.6vw,1.28rem)] mb-10">
@@ -45,7 +45,7 @@ export default function Hero() {
 
         <div className="flex flex-wrap gap-x-7 gap-y-2 font-mono text-[0.74rem] text-paper/65 tracking-wide">
           {[
-            "Founded by Aneesh",
+            "Founded by : Aneesh Challa",
             "Product — IRABrain",
             "Assistant — IRA",
             "Trust-based memory",
