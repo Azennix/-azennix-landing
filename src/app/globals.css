@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-  --color-ink: #1A1A1A;
-  --color-paper: #F5F5F2;
-  --color-sand: #D8C3A5;
+  --color-ink: #1E1B16;
+  --color-paper: #EEE3D1;
+  --color-sand: #EEE3D1;
   --color-blood: #8B0000;
 
   --font-display: "Space Grotesk", sans-serif;

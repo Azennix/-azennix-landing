@@ -21,8 +21,8 @@ const GRID: number[][] = [
   [1,1,1,1,0,0,0,0,0,0,0,0,1,1,1,1],
 ];
 
-const SAND = "#D8C3A5";
-const BLOOD = "#8B0000";
+const SAND = "#EEE3D1";
+const BLOOD = "#EEE3D1";
 
 export default function BrandMark({ className = "" }: { className?: string }) {
   const rows = GRID.length;

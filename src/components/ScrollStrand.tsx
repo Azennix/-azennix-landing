@@ -37,11 +37,11 @@ export default function ScrollStrand() {
         const x1 = w / 2 + Math.sin(phase) * w * 0.32;
         const x2 = w / 2 + Math.sin(phase + Math.PI) * w * 0.32;
         const lit = y / h < progress;
-        ctx!.fillStyle = lit ? "rgba(139,0,0,0.9)" : "rgba(216,195,165,0.22)";
+        ctx!.fillStyle = lit ? "rgba(238, 227, 209, 0.9)" : "rgba(238, 227, 209, 0.22)";
         ctx!.fillRect(x1 - dot / 2, y, dot, dot);
         ctx!.fillStyle = lit
-          ? "rgba(216,195,165,0.9)"
-          : "rgba(216,195,165,0.14)";
+          ? "rgba(238, 227, 209, 0.9)"
+          : "rgba(238, 227, 209, 0.14)";
         ctx!.fillRect(x2 - dot / 2, y, dot, dot);
       }
       raf = requestAnimationFrame(draw);
