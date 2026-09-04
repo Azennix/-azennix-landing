@@ -7,9 +7,7 @@ export default function Hero() {
       id="top"
       className="relative min-h-[100svh] flex items-center overflow-hidden pt-[140px] pb-[100px]"
     >
-      <div className="absolute inset-0 z-0 opacity-55">
-        <HelixCanvas dot={4} gap={9} amp={0.22} speed={0.0007} accentEvery={19} />
-      </div>
+      
 
       <div className="relative z-10 max-w-[880px] mx-auto px-5 sm:px-8 lg:px-16 w-full">
           <PixelWordmark className="h-8 sm:h-9 w-auto mb-8" />

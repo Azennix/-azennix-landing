@@ -6,7 +6,7 @@ import BrandMark from "./BrandMark";
 
 const links = [
   { href: "/company", label: "Company", num: "01" },
-  { href: "/#irabrain", label: "IRABrain", num: "02" },
+  { href: "/#irabrain", label: "Products", num: "02" },
   { href: "/research", label: "Research", num: "03" },
   { href: "/#approach", label: "Approach", num: "04" },
   { href: "/#contact", label: "Contact", num: "05" },

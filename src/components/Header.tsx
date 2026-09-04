@@ -4,7 +4,7 @@ import MobileMenu from "./MobileMenu";
 
 const links = [
   { href: "/company", label: "Company" },
-  { href: "/#irabrain", label: "IRABrain" },
+  { href: "/#irabrain", label: "Products" },
   { href: "/research", label: "Research" },
   { href: "/#approach", label: "Approach" },
   { href: "/#contact", label: "Contact" },
@@ -31,7 +31,7 @@ export default function Header() {
           className="flex items-center gap-3 font-display font-semibold text-[1.05rem] tracking-tight"
         >
           <BrandMark className="w-[30px] h-[30px] shrink-0" />
-          AZENNIX
+          A Z E N N I X
         </Link>
 
         <div className="hidden md:flex items-center gap-9 text-sm font-medium text-paper/65">

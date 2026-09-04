@@ -51,14 +51,14 @@ export default function CompanyPage() {
         {/* Hero */}
         <section className="relative overflow-hidden pt-[120px] pb-[80px]">
           <div className="absolute inset-0 z-0 opacity-40">
-            <HelixCanvas dot={4} gap={10} amp={0.2} speed={0.0006} accentEvery={19} />
+            
           </div>
           <div className="relative z-10 max-w-[880px] mx-auto px-5 sm:px-8 lg:px-16">
             <span className="eyebrow">The Company</span>
             <h1 className="font-display font-semibold leading-[1.04] tracking-tight text-[clamp(2.2rem,6vw,4.2rem)] mt-6 mb-6">
               Azennix builds AI
               <br />
-              <span className="text-sand">for human growth.</span>
+              <span className="text-sand">About human Intelligence.</span>
             </h1>
             <p className="text-paper/65 max-w-[620px] leading-relaxed text-[clamp(1rem,1.5vw,1.15rem)]">
               We&apos;re a small, founder-led company based in Kakinada, India,

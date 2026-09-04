@@ -60,7 +60,6 @@ export default function ResearchPage() {
         {/* Hero */}
         <section className="relative overflow-hidden pt-[120px] pb-[80px]">
           <div className="absolute inset-0 z-0 opacity-40">
-            <HelixCanvas dot={4} gap={10} amp={0.24} speed={0.0008} accentEvery={17} />
           </div>
           <div className="relative z-10 max-w-[880px] mx-auto px-5 sm:px-8 lg:px-16">
             <span className="eyebrow">Research</span>

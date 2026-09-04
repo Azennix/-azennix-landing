@@ -33,7 +33,7 @@ export default function Approach() {
           <h2 className="font-display font-semibold text-[clamp(1.9rem,4vw,3rem)] mt-5 mb-5">
             Two strands,
             <br />
-            one system.
+            one system , Every response recalls your thoughts.
           </h2>
           <p className="text-ink/60 leading-relaxed text-[1.05rem]">
             Every Azennix product pairs a technical strand with a human one —
@@ -44,7 +44,7 @@ export default function Approach() {
 
         <div className="grid grid-cols-1 md:grid-cols-[0.85fr_1.15fr] gap-12 lg:gap-20 items-center">
           <RevealOnScroll className="relative h-[380px] border border-ink/10 overflow-hidden">
-            <HelixCanvas dot={5} gap={12} amp={0.3} speed={0.0011} accentEvery={13} />
+            <HelixCanvas dot={5} gap={12} amp={0.3} speed={0.0003} accentEvery={13} />
           </RevealOnScroll>
 
           <RevealOnScroll className="flex flex-col">
