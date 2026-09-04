@@ -5,13 +5,11 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative min-h-[100svh] flex items-center overflow-hidden pt-[140px] pb-[100px]"
+      className="relative min-h-[auto] flex items-start overflow-hidden pt-[90px] pb-[10px]"
     >
       
 
       <div className="relative z-10 max-w-[880px] mx-auto px-5 sm:px-8 lg:px-16 w-full">
-          <PixelWordmark className="h-8 sm:h-9 w-auto mb-8" />
-        <span className="eyebrow">Azennix / Est . India </span>
 
         <h1 className="font-display font-semibold leading-[1.04] tracking-tight text-[clamp(2.6rem,7vw,5.4rem)] mt-6 mb-6">
           AI systems for

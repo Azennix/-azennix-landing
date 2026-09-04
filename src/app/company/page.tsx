@@ -9,7 +9,7 @@ import BrandMark from "@/components/BrandMark";
 export const metadata: Metadata = {
   title: "Company — Azennix",
   description:
-    "Azennix is a company building AI systems for Future Founders, founded by Aneesh Challa  EST : India.",
+    "Azennix builds AI systems designed to understand, remember, and compound human intelligence over time.",
 };
 
 const stats = [
@@ -58,7 +58,7 @@ export default function CompanyPage() {
             <h1 className="font-display font-semibold leading-[1.04] tracking-tight text-[clamp(2.2rem,6vw,4.2rem)] mt-6 mb-6">
               Azennix builds AI
               <br />
-              <span className="text-sand">About human Intelligence.</span>
+              <span className="text-sand">For human Intelligence.</span>
             </h1>
             <p className="text-paper/65 max-w-[620px] leading-relaxed text-[clamp(1rem,1.5vw,1.15rem)]">
               We&apos;re a small, founder-led company based in Kakinada, India,
@@ -143,19 +143,40 @@ export default function CompanyPage() {
               </h2>
             </RevealOnScroll>
             <div className="grid grid-cols-1 md:grid-cols-[0.4fr_0.6fr] gap-11 items-start">
-              <RevealOnScroll className="aspect-square border border-ink/10 flex items-center justify-center bg-ink">
-                <BrandMark className="w-2/5" />
-              </RevealOnScroll>
+              
               <RevealOnScroll>
-                <p className="font-display font-medium text-[clamp(1.15rem,2.2vw,1.5rem)] leading-relaxed">
-                  &quot;I started Azennix because I kept watching sharp,
-                  ambitious people lose momentum — not from lack of ability,
-                  but because nothing around them remembered their progress.
-                  IRABrain is the system I wished I had.&quot;
-                </p>
+  <p className="font-display font-medium text-[clamp(1.15rem,2.2vw,1.5rem)] leading-relaxed">
+    We live in a world where more information is being created than ever
+    before, yet the systems we use still struggle to understand the people
+    behind that information. Our ideas are scattered across notes,
+    conversations, documents, apps, and unfinished plans. Decisions are made,
+    lessons are learned, goals evolve — but most technology treats every
+    interaction as if it starts from zero.
+  </p>
+
+  <p className="mt-6 font-display font-medium text-[clamp(1.15rem,2.2vw,1.5rem)] leading-relaxed">
+    AI has made it remarkably easy to generate answers, but generating an
+    answer is not the same as understanding a person. An intelligent system
+    should know what came before, understand why it mattered, recognize what
+    has changed, and use that understanding to help with what comes next.
+  </p>
+
+  <p className="mt-6 font-display font-medium text-[clamp(1.15rem,2.2vw,1.5rem)] leading-relaxed text-blood">
+    Azennix exists to build that missing layer of intelligence — systems that
+    remember meaningful human context, learn from experience, and become more
+    useful over time.
+  </p>
+
+  <p className="mt-6 font-display font-medium text-[clamp(1.15rem,2.2vw,1.5rem)] leading-relaxed">
+    We believe the future of AI should not be built around replacing human
+    judgment, but around strengthening it. Technology should compound what
+    people learn, preserve what they build, and help them move forward without
+    losing the context of where they started.
+  </p>
                 <p className="mt-6 font-mono text-[0.8rem] tracking-wide text-ink/60">
                   — Aneesh, Founder &amp; CEO, Azennix
                 </p>
+
               </RevealOnScroll>
             </div>
           </div>

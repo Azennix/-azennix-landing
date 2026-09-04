@@ -1,6 +1,7 @@
 import Link from "next/link";
 import BrandMark from "./BrandMark";
 import MobileMenu from "./MobileMenu";
+import PixelWordmark from "./PixelWordmark";
 
 const links = [
   { href: "/company", label: "Company" },
@@ -30,8 +31,8 @@ export default function Header() {
           href="/"
           className="flex items-center gap-3 font-display font-semibold text-[1.05rem] tracking-tight"
         >
-          <BrandMark className="w-[30px] h-[30px] shrink-0" />
-          A Z E N N I X
+          <PixelWordmark className="w-[120px] h-auto" />
+          
         </Link>
 
         <div className="hidden md:flex items-center gap-9 text-sm font-medium text-paper/65">

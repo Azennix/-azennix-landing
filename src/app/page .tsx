@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import TheProblem from "@/components/TheProblem";
 import IRABrain from "@/components/IRABrain";
 import Approach from "@/components/Approach";
 import CTA from "@/components/CTA";
@@ -13,6 +14,7 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <TheProblem />
         <IRABrain />
         <Approach />
         <CTA />

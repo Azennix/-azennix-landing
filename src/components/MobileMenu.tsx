@@ -33,61 +33,37 @@ export default function MobileMenu() {
   return (
     <>
       {/* Toggle: 4 pixel squares that morph into an X */}
-      <button
-        aria-label={open ? "Close menu" : "Open menu"}
-        aria-expanded={open}
-        onClick={() => setOpen((v) => !v)}
-        className="md:hidden relative w-9 h-9 shrink-0"
-      >
-        <span
-          className="absolute bg-sand transition-all duration-300 ease-out"
-          style={{
-            width: 10,
-            height: 10,
-            top: open ? "50%" : 4,
-            left: open ? "50%" : 4,
-            transform: open
-              ? "translate(-50%,-50%) rotate(45deg)"
-              : "translate(0,0) rotate(0deg)",
-          }}
-        />
-        <span
-          className="absolute bg-sand transition-all duration-300 ease-out"
-          style={{
-            width: 10,
-            height: 10,
-            top: open ? "50%" : 4,
-            right: open ? "50%" : 4,
-            transform: open
-              ? "translate(50%,-50%) rotate(-45deg)"
-              : "translate(0,0) rotate(0deg)",
-          }}
-        />
-        <span
-          className="absolute bg-sand transition-all duration-300 ease-out"
-          style={{
-            width: 10,
-            height: 10,
-            bottom: open ? "50%" : 4,
-            left: open ? "50%" : 4,
-            transform: open
-              ? "translate(-50%,50%) rotate(-45deg)"
-              : "translate(0,0) rotate(0deg)",
-          }}
-        />
-        <span
-          className="absolute bg-blood transition-all duration-300 ease-out"
-          style={{
-            width: 10,
-            height: 10,
-            bottom: open ? "50%" : 4,
-            right: open ? "50%" : 4,
-            transform: open
-              ? "translate(50%,50%) rotate(45deg)"
-              : "translate(0,0) rotate(0deg)",
-          }}
-        />
-      </button>
+      {/* Azennix menu icon: 3 lines → X */}
+<button
+  aria-label={open ? "Close menu" : "Open menu"}
+  aria-expanded={open}
+  onClick={() => setOpen((v) => !v)}
+  className="md:hidden relative w-10 h-10 shrink-0"
+>
+  <span
+    className={`absolute left-1/2 top-1/2 w-7 h-[2px] bg-sand transition-all duration-300 ease-out ${
+      open
+        ? "-translate-x-1/2 -translate-y-1/2 rotate-45"
+        : "-translate-x-1/2 -translate-y-[9px]"
+    }`}
+  />
+
+  <span
+    className={`absolute left-1/2 top-1/2 w-7 h-[2px] bg-sand transition-all duration-300 ease-out ${
+      open
+        ? "-translate-x-1/2 -translate-y-1/2 opacity-0"
+        : "-translate-x-1/2 -translate-y-1/2"
+    }`}
+  />
+
+  <span
+    className={`absolute left-1/2 top-1/2 w-7 h-[2px] bg-sand transition-all duration-300 ease-out ${
+      open
+        ? "-translate-x-1/2 -translate-y-1/2 -rotate-45"
+        : "-translate-x-1/2 translate-y-[7px]"
+    }`}
+  />
+</button>
 
       {/* Full-screen overlay panel */}
    <div
